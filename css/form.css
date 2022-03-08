@@ -318,16 +318,14 @@ fieldset {
   width: 100%;
   z-index: 9;
   bottom: -155px;
-  z-index: 3;
-  transition-timing-function: ease-in;
   transition-property: height;
- transition-duration: 2s;
+  transition-duration: 2s;
+  z-index: 3;
   }
 
 .footer-0 {
   height: 188px;
-  z-index: 3;
-}
+  z-index: 3;  }
 
 .footer-1 {
   height: 376px;
