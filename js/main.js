@@ -1,6 +1,9 @@
 (function($) {
 
-
+function submit(){
+  var signup = document.getElementById('signup-form');
+  signup.submit();
+}
 
     var form = $("#signup-form");
     form.validate({
@@ -71,8 +74,9 @@
         onFinished: function (event, currentIndex)
         {
             var name = document.getElementById("name").value;
-            console.log(name);
-            form.parent().parent().append(`<h1>Hi , ${name}!</h1><br><h1>We will reach out as soon as possible</h1>`).parent().addClass('finished');
+            console.log("If you are reading this, thanks for stopping by!")
+            form.parent().parent().append(`<h1>Hi , ${name}!</h1><br><h1>We will reach out as soon as possible</h1><br><h1>You are now being redirected to our main site<h1>`).parent().addClass('finished');
+            setTimeout(submit, 3000);
             return true;
         },
         onStepChanged : function (event, currentIndex, priorIndex) {
@@ -80,6 +84,8 @@
             return true;
         }
     });
+
+
 
     jQuery.extend(jQuery.validator.messages, {
         required: "",
