@@ -122,9 +122,9 @@ body {
   font-family: 'Montserrat';
   margin: 0px;
   background: #00a7f6;
-  position: relative;
+  position: static;
   padding: 0px;
-  top:40%;
+  top:30%;
   z-index: 5;
 
   }
